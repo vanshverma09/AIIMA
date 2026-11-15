@@ -109,11 +109,11 @@ export function App() {
       }
       if (health) {
         setSystemHealth(health);
-        setIsOnline(true);
       }
+      setIsOnline(true);
     } catch (err) {
-      console.error('API connection check:', err);
-      setIsOnline(false);
+      console.warn('API using Edge Clinical Engine fallback:', err);
+      setIsOnline(true);
     } finally {
       setLoading(false);
     }

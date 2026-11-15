@@ -1,0 +1,11 @@
+{
+  "name": "healthpredict-enterprise",
+  "version": "2.4.0",
+  "private": true,
+  "description": "HealthPredict Enterprise - Hospital Clinical Intelligence & Multi-Disease Risk Prediction Suite",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm run dev",
+    "preview": "cd frontend && npm run preview"
+  }
+}
